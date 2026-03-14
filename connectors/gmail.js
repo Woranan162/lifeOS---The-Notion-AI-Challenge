@@ -3,8 +3,10 @@ import fs from 'fs';
 import path from 'path';
 import readline from 'readline';
 
-const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
-const TOKEN_PATH = 'token.json';
+const SCOPES = [
+  'https://www.googleapis.com/auth/gmail.readonly',
+  'https://www.googleapis.com/auth/calendar.readonly'
+];const TOKEN_PATH = 'token.json';
 const CREDENTIALS_PATH = 'credentials.json';
 
 function loadCredentials() {
